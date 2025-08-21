@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-base{
+   overflow: auto;
+   width: 500px;
+   border-collapse: separate;
+   border-spacing: 10px, 5px;
+   table-layout: fixed;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.table-header{
+   background: var(--background);
+   color: blue;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: left;
+}
+
+.filter-row{
+   background: var(--background);
+   color: blue;
+   font-family: Arial, Helvetica, sans-serif;
+}
